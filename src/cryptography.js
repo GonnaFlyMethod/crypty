@@ -2,8 +2,8 @@ const crypto = require('crypto')
 const fs = require('fs')
 
 const ALGO = 'aes-256-cbc'
-const SECRET_KEY = Buffer.from(process.env.CRYPTY_SECRET_KEY , "hex")
-const INIT_VECTOR = Buffer.from(process.env.CRYPTY_INIT_VECTOR , "hex")
+const SECRET_KEY = Buffer.from(process.env.CRYPTY_SECRET_KEY, "hex")
+const INIT_VECTOR = Buffer.from(process.env.CRYPTY_INIT_VECTOR, "hex")
 
 class EncryptorOfCrypty{
   constructor(imgPath,
